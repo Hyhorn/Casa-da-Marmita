@@ -9,6 +9,12 @@ public class Pedido {
     private boolean arroz;
     private boolean feijao;
     private boolean carne;
+    private boolean macarrao;
+    private boolean batata_frita;
+    private boolean legumes;
+    private boolean lasanha;
+    private boolean ovo_frito;
+    private boolean torresmo;
     private String tamanho;
     private int quantidade;
     private float valor;
@@ -37,6 +43,24 @@ public class Pedido {
         if (carne == true) {
             pedido = pedido + "Carne " ;
         }
+        if (macarrao == true) {
+            pedido = pedido + "Macarrao, ";
+        }
+        if (batata_frita == true) {
+            pedido = pedido + "Batata Frita, ";
+        }
+        if (legumes == true) {
+            pedido = pedido + "Legumes, ";
+        }
+        if (lasanha == true) {
+            pedido = pedido + "Lasanha, ";
+        }
+        if (ovo_frito == true) {
+            pedido = pedido + "Ovo Frito, ";
+        }
+        if (torresmo == true) {
+            pedido = pedido + "Torresmo, ";
+        }
         return pedido;
     }
 
@@ -59,6 +83,30 @@ public class Pedido {
     public void setArroz(boolean arroz) {
         this.arroz = arroz;
     }
+    
+    public void setMacarrao(boolean macarrao) {
+        this.macarrao = macarrao;
+    }
+    
+    public void setBatata_frita(boolean batata_frita) {
+        this.batata_frita = batata_frita;
+    }
+    
+    public void setLegumes(boolean legumes) {
+        this.legumes = legumes;
+    }
+    
+    public void setLasanha(boolean lasanha) {
+        this.lasanha = lasanha;
+    }
+    
+    public void setOvo_frito(boolean ovo_frito) {
+        this.ovo_frito = ovo_frito;
+    }
+    
+    public void setTorresmo(boolean torresmo) {
+        this.torresmo = torresmo;
+    }
 
     public void setFeijao(boolean feijao) {
         this.feijao = feijao;
@@ -80,6 +128,29 @@ public class Pedido {
         return arroz;
     }
 
+    public boolean isMacarrao() {
+        return macarrao;
+    }
+    
+    public boolean isBatata_frita() {
+        return batata_frita;
+    }
+    
+    public boolean isLegumes() {
+        return legumes;
+    }
+    
+    public boolean isLasanha() {
+        return lasanha;
+    }
+    
+    public boolean isOvo_frito() {
+        return ovo_frito;
+    }
+    
+    public boolean isTorresmo() {
+        return torresmo;
+    }
     public boolean isFeijao() {
         return feijao;
     }
